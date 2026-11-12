@@ -1,0 +1,61 @@
+# Geotecnia II - pinned Python environment (Python 3.13)
+# Install with:  bash setup.sh   (handles the two packages that need special care)
+
+# --- Core / reporting ---
+numpy==2.5.3
+scipy==1.18.1
+pandas==2.3.3          # capped <3 by python-ags4
+matplotlib==3.11.2
+plotly==7.1.0
+sympy==1.14.0
+Pint==0.26.2
+handcalcs==1.11.0
+jupyterlab==4.6.6
+ipykernel==7.4.0
+nbconvert==7.17.2
+openpyxl==3.1.5
+python-docx==1.2.0
+networkx==3.7
+
+# --- CAD / BIM / 3D ---
+aspose-cad==26.7.0     # commercial; runs in evaluation mode without a license
+ezdxf==1.4.5
+ifcopenshell==0.9.0.post1
+trimesh==5.2.0
+open3d==0.20.0         # needs system libs: libegl1 libgl1 libgomp1
+
+# --- Structural ---
+sectionproperties==3.10.2
+concreteproperties==0.8.0
+PyNiteFEA==3.2.1
+anastruct==1.7.1
+openseespy==3.8.0.0
+o3seespy==3.4.0.7
+
+# --- Geotechnical / seismic ---
+python-ags4==1.2.0
+pygef==0.14.1
+lasio==0.32
+groundhog==0.15.0
+geofound==1.1.4
+sfsimodels==0.9.46
+liquepy==0.6.34
+eqsig==1.2.17
+pyRotd==0.7.0
+pyStrata==0.6.0
+pyslope==1.4.0
+gstools==1.7.0
+PyKrige==1.7.3
+
+# --- Water / hydraulics ---
+wntr==1.5.0
+julian==0.14           # pyswmm dependency; must be built with --use-pep517
+pyswmm==2.2.0
+pysheds==0.5
+
+# --- GIS / survey ---
+geopandas==1.2.0
+pyproj==3.8.0
+rasterio==1.5.2
+laspy==2.7.0
+osmnx==2.1.1

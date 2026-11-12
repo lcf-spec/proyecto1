@@ -1,0 +1,11 @@
+# Aspose / other license files - never commit
+*.lic
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+
+# Generated outputs
+Geotecnia_II/outputs/
