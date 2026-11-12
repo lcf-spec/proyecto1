@@ -9,3 +9,5 @@ __pycache__/
 
 # Generated outputs
 Geotecnia_II/outputs/
+*.egg-info/
+.pytest_cache/

@@ -17,4 +17,5 @@ pip install --use-pep517 julian==0.14
 pip install --ignore-installed blinker || true
 
 pip install -r requirements.txt
+pip install -e .   # the local geotools library
 echo "Geotecnia II environment ready."
