@@ -13,6 +13,14 @@ Units: **mm, MPa, kN, kN·m**. Seismic module: m, s, kN, g.
 Notebook `notebooks/01_nsr10_ejemplo.ipynb` works a 5-storey RC frame building through spectrum → ELF →
 beam flexure and shear → column interaction diagram.
 
+## Excel: memoria de cálculo de muros de contención
+
+`excel/MEMORIA_CALCULO_MUROS.xlsx` predimensiona y diseña muros en voladizo siguiendo las notas
+*Muros de Contención* (Diseño de Concreto II, basadas en Das 7ed) y NSR-10, con el mismo formato de la
+memoria de zapatas: hoja `INPUTS` (una fila por muro), una hoja de memoria por muro y `TABLAS`.
+El muro M1 reproduce el ejemplo del documento (`tests/test_muros_excel.py`). Para regenerarlo:
+`python excel/build_muros.py excel/MEMORIA_CALCULO_MUROS.xlsx` y ábralo en Excel para recalcular.
+
 ## Limits — read before using results for real work
 
 - **Not yet covered:** seismic detailing for DES/DMO (Título C.21: confinement, strong column–weak beam,
