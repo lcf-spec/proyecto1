@@ -21,6 +21,11 @@ memoria de zapatas: hoja `INPUTS` (una fila por muro), una hoja de memoria por m
 El muro M1 reproduce el ejemplo del documento (`tests/test_muros_excel.py`). Para regenerarlo:
 `python excel/build_muros.py excel/MEMORIA_CALCULO_MUROS.xlsx` y ábralo en Excel para recalcular.
 
+`excel/MEMORIA_M1_paso_a_paso.pdf` explica el Excel paso a paso (fórmulas, esquemas y diagramas), con los
+números leídos de la hoja y la celda donde aparece cada uno. Para otro muro:
+`python excel/memoria_muros_pdf.py excel/MEMORIA_CALCULO_MUROS.xlsx M2 MEMORIA_M2.pdf`
+(el Excel debe estar guardado con los valores calculados).
+
 ## Limits — read before using results for real work
 
 - **Not yet covered:** seismic detailing for DES/DMO (Título C.21: confinement, strong column–weak beam,
