@@ -31,6 +31,20 @@ PyNiteFEA==3.2.1
 anastruct==1.7.1
 openseespy==3.8.0.0
 o3seespy==3.4.0.7
+PyCBA==1.0.2               # continuous beams, influence lines
+indeterminatebeam==2.4.0   # statically indeterminate beams with plots
+calfem-python==3.6.16      # teaching FEM (CALFEM)
+scikit-fem==12.0.2         # general finite elements
+gmsh==4.15.2               # meshing; needs system lib libglu1-mesa
+pyvista==0.49.2            # 3D visualization
+opsvis==1.3.7              # OpenSees model/result plots
+opstool==0.8.7             # OpenSees pre/post-processing; needs tkinter
+vfo==0.0.19                # OpenSees visualization
+structuralcodes==0.7.3     # Eurocode 2 / fib Model Code 2010 material laws and checks
+forallpeople==3.5.0        # structural units, pairs with handcalcs
+Pystra==2.0.0              # structural reliability (FORM/SORM)
+openturns==1.27.post1      # uncertainty and reliability analysis
+obspy==1.5.1               # earthquake records (seismology)
 
 # --- Geotechnical / seismic ---
 python-ags4==1.2.0

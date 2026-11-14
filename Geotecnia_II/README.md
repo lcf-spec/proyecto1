@@ -8,7 +8,7 @@ all pinned to versions that are known to install and import together on Python 3
 | Path | Contents |
 |---|---|
 | `geotools/` | Our own tested library of geotechnical calculations (see below) |
-| `tests/` | `pytest` checks of `geotools` against textbook values |
+| `tests/` | `pytest` checks of `geotools` against textbook values, plus smoke tests that the structural packages reproduce closed-form results |
 | `requirements.txt` | Pinned package list (~50 packages) |
 | `setup.sh` | One-command environment rebuild, including the special cases below |
 | `notebooks/` | Calculation notebooks |
@@ -32,10 +32,27 @@ jupyter lab
 
 ### Notes
 
+- **opstool needs tkinter.** A normal Python install on your computer includes it. The cloud
+  container's Python (`/usr/local`) was built without it, so `opstool` won't import there;
+  use `opsvis` or `vfo` instead.
+
 - **pandas is held at 2.3.3** because `python-ags4==1.2.0` requires `pandas<3.0`.
 - **Aspose.CAD is commercial.** Without a license it runs in evaluation mode, which adds watermarks.
   Keep any `.lic` file outside the repo; `*.lic` is already in `.gitignore`.
 - `pyslope` also installs Django, gunicorn and pytest. They are harmless, just extra weight.
+
+## Structural stack
+
+| Need | Packages |
+|---|---|
+| Frame / beam analysis | `PyNiteFEA`, `anastruct`, `PyCBA`, `indeterminatebeam` |
+| Nonlinear & seismic analysis | `openseespy`, `o3seespy`, plus `opsvis`, `vfo`, `opstool` for plots |
+| Finite elements & meshing | `calfem-python`, `scikit-fem`, `gmsh`, `pyvista` |
+| Sections | `sectionproperties`, `concreteproperties` |
+| Design codes | `structuralcodes` (Eurocode 2, fib MC2010) |
+| Calc reports & units | `handcalcs`, `forallpeople`, `pint` |
+| Reliability | `Pystra`, `openturns` |
+| Earthquake records | `obspy`, `eqsig`, `pyrotd` |
 
 ## `geotools` library
 
