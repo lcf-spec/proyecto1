@@ -18,4 +18,5 @@ pip install --ignore-installed blinker || true
 
 pip install -r requirements.txt
 pip install -e .   # the local geotools library
+[ -d ../Estructuras ] && pip install -e ../Estructuras   # structools (NSR-10 / ACI 318)
 echo "Geotecnia II environment ready."

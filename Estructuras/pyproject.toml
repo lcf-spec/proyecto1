@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structools"
+version = "0.1.0"
+description = "Structural design per NSR-10 / ACI 318: reinforced concrete and seismic loads"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "pandas", "shapely"]
+
+[tool.setuptools]
+packages = ["structools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

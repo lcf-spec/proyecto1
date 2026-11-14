@@ -1,5 +1,7 @@
 # Geotecnia II
 
+> Structural design per NSR-10 / ACI 318 lives in [`../Estructuras`](../Estructuras/README.md) and is installed by the same `setup.sh`.
+
 Python workspace for the Geotecnia II course: geotechnical, structural, hydraulic, GIS and CAD tools,
 all pinned to versions that are known to install and import together on Python 3.13.
 
